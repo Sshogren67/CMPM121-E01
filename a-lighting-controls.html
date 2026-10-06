@@ -28,9 +28,8 @@
     const swatch = document.querySelector("#swatch");
 
     function update() {
-      let item = presetCollection[presetIndex];
-      label.textContent = item.name;
-      swatch.style.backgroundColor = item.color;
+      label.textContent = presetCollection[presetIndex].name;
+      swatch.style.backgroundColor = presetCollection[presetIndex].color;
     }
 
     document.querySelector("#next").addEventListener("click", () => {
